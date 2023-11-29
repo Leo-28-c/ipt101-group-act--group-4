@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- A. Modify the N below to display the group number -->
+    <title>Group No. 4 Display Name</title>
+</head>
+<body>
+
+<!-- B. Edit your group number N below -->
+<h1>Group No. 4</h1> 
+
+<h2>List of Names</h2>
+
+<!-- This is the container where we will display the names -->
+<ol id="nameList"></ol>
+
+<script>
+    // Your array of names
+    // C. Modify your group members in UPPERCASE using the format: Lastname, FirstName
+    var namesArray = [
+  "Ramos, Christian Leo F.",
+  "Badol, Nestor",
+  "Duldulao, Janice",
+  "Cortez, Jomer B.",
+  "Sinco, Lemar S.",
+  "Rabuya, Anthony",
+  "Quiquiq, Crystal",
+   
+];
+
+    // Get the container element
+    var nameListContainer = document.getElementById("nameList");
+
+    // Loop through the names and create a list
+    for (var i = 0; i < namesArray.length; i++) {
+        // Create a list element for each name
+        var ol = document.createElement("li");
+
+        // Set the text content of the list to the current name
+        ol.textContent = namesArray[i];
+
+        // Append the list to the container
+        nameListContainer.appendChild(ol);
+    }
+</script>
+
+</body>
+</html>
